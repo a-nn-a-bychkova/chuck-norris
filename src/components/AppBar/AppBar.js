@@ -1,11 +1,10 @@
-import logo from '../../images/logo.png';
 import styles from './AppBar.module.css';
 
 export default function AppBar() {
   return (
     <header className={styles.header}>
       <img
-        src={logo}
+        src="https://assets.chucknorris.host/img/avatar/chuck-norris.png"
         alt="logo"
         width="43px"
         height="43px"
