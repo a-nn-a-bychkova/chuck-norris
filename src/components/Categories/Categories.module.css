@@ -8,7 +8,6 @@
   font-size: 50px;
   line-height: 1.2;
   color: #1c1c39;
-  /* background-color: aquamarine; */
 }
 .List {
   display: flex;
@@ -17,11 +16,9 @@
   padding: 0;
   width: 100%;
   margin: 0;
-  /* background-color: burlywood; */
 }
 
 .Item {
-  display: block;
   width: 170px;
   height: 57px;
   background-color: pink;
@@ -29,9 +26,14 @@
   margin-bottom: 20px;
   border-radius: 20px;
   text-align: center;
+  align-items: center;
+  line-height: 3.12;
+  font-family: Raleway;
+  font-weight: 800;
+  font-size: 16px;
 }
+
 .ActiveItem {
-  display: block;
   width: 170px;
   height: 57px;
   margin-right: 20px;
@@ -40,11 +42,13 @@
   text-align: center;
   background-color: #422ed4;
   color: #ffffff;
+  line-height: 3.12;
+  font-family: Raleway;
+  font-weight: 800;
+  font-size: 16px;
 }
 
 .ItemText {
-  display: block;
-
   font-family: Raleway;
   font-weight: 800;
   font-size: 16px;
@@ -64,9 +68,11 @@
 .Modal {
   position: absolute;
   top: 160px;
-  width: 100%;
+
+  width: 1120px;
   height: 162px;
   padding: 24px;
+
   background-color: #422ed4;
   box-shadow: 0px 100px 80px rgba(80, 76, 103, 0.07),
     0px 0px 10.0172px rgba(80, 76, 103, 0.035);
