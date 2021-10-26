@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/chuck-norris/static/css/main.06b0c554.chunk.css",
+    "main.css": "/chuck-norris/static/css/main.a5de7625.chunk.css",
     "main.js": "/chuck-norris/static/js/main.9ece50dc.chunk.js",
     "main.js.map": "/chuck-norris/static/js/main.9ece50dc.chunk.js.map",
     "runtime-main.js": "/chuck-norris/static/js/runtime-main.d3170ab3.js",
@@ -10,14 +10,14 @@
     "static/js/3.f61e20b2.chunk.js": "/chuck-norris/static/js/3.f61e20b2.chunk.js",
     "static/js/3.f61e20b2.chunk.js.map": "/chuck-norris/static/js/3.f61e20b2.chunk.js.map",
     "index.html": "/chuck-norris/index.html",
-    "static/css/main.06b0c554.chunk.css.map": "/chuck-norris/static/css/main.06b0c554.chunk.css.map",
+    "static/css/main.a5de7625.chunk.css.map": "/chuck-norris/static/css/main.a5de7625.chunk.css.map",
     "static/js/2.5535dc86.chunk.js.LICENSE.txt": "/chuck-norris/static/js/2.5535dc86.chunk.js.LICENSE.txt",
     "static/media/chuck.e2e70346.png": "/chuck-norris/static/media/chuck.e2e70346.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d3170ab3.js",
     "static/js/2.5535dc86.chunk.js",
-    "static/css/main.06b0c554.chunk.css",
+    "static/css/main.a5de7625.chunk.css",
     "static/js/main.9ece50dc.chunk.js"
   ]
 }
