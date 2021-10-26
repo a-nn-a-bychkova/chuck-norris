@@ -1,5 +1,6 @@
 @media screen and (min-width: 320px) {
   .Container {
+    background-color: #e5e5e5;
     padding-left: 40px;
     padding-right: 40px;
   }

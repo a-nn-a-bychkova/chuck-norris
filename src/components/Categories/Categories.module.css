@@ -32,6 +32,7 @@
     font-weight: 800;
     font-size: 16px;
     color: #1c1c39;
+    background-color: #ffffff;
   }
 
   .ActiveItem {
@@ -48,6 +49,7 @@
   }
   .ChuckContainer {
     position: relative;
+    height: 380px;
   }
   .Img {
     position: absolute;
@@ -84,6 +86,9 @@
   .Item:nth-child(3n) {
     margin-right: 0px;
   }
+  .ChuckContainer {
+    height: 300px;
+  }
   .Joke {
     width: 100%;
   }
@@ -110,7 +115,7 @@
     width: 170px;
   }
   .Item:nth-child(4n) {
-    margin-right: 2px;
+    margin-right: 20px;
   }
   .Item:nth-child(6n) {
     margin-right: 0px;
