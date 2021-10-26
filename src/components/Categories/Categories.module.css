@@ -52,7 +52,7 @@
   }
   .Img {
     position: absolute;
-    top: -160px;
+    top: -153px;
     right: 40px;
     z-index: 0;
   }
@@ -61,7 +61,7 @@
     box-sizing: border-box;
     position: relative;
     z-index: 1;
-    margin-top: 160px;
+    margin-top: 165px;
     padding: 24px;
     min-height: 162px;
     background-color: #422ed4;
@@ -86,9 +86,6 @@
   .Item {
     width: 216px;
     margin-right: 20px;
-    /* width: 170px; */
-    /* margin-right: 10px;
-    margin-left: 10px; */
   }
 
   .Item:nth-child(3n) {
@@ -118,7 +115,7 @@
     font-size: 50px;
   }
   .Item {
-    width: 21%;
+    width: 23.29%;
   }
 }
 
