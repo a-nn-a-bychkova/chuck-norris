@@ -2,7 +2,7 @@ import styles from './AppBar.module.css';
 
 export default function AppBar() {
   return (
-    <header className={styles.header}>
+    <header className={styles.Header}>
       <img
         src="https://assets.chucknorris.host/img/avatar/chuck-norris.png"
         alt="logo"

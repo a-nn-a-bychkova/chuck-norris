@@ -12,11 +12,9 @@ export default function Categories() {
   useEffect(() => {
     norrisAPI.fetchCategories().then(result => setCategories(result));
     norrisAPI.fetchRandomJoke().then(result => setJoke(result.value));
-  }, [activeCategory]);
+  }, []);
 
   function handleCategoryClick(e) {
-    // e.preventDefault;
-    console.log('we are in');
     setActiveCategory(e.currentTarget.innerHTML);
     norrisAPI
       .fetchRandomJokeOfCategory(e.currentTarget.innerHTML)
@@ -34,7 +32,9 @@ export default function Categories() {
               <li
                 key={category}
                 className={
-                  activeCategory === category ? styles.ActiveItem : styles.Item
+                  activeCategory === category
+                    ? `${styles.Item} ${styles.ActiveItem}`
+                    : styles.Item
                 }
                 onClick={handleCategoryClick}
               >
@@ -47,7 +47,7 @@ export default function Categories() {
 
       <div className={styles.ChuckContainer}>
         <img src={Chuck} width="122px" height="258px" className={styles.Img} />
-        <div className={styles.Modal}>{joke}</div>
+        <div className={styles.Joke}>{joke}</div>
       </div>
     </section>
   );
