@@ -14,13 +14,13 @@
     display: flex;
     flex-direction: column;
     list-style: none;
-
     padding: 0;
     width: 100%;
     margin: 0;
     align-items: center;
   }
   .Item {
+    cursor: pointer;
     width: 170px;
     height: 57px;
     margin-bottom: 20px;
@@ -49,17 +49,21 @@
   }
   .ChuckContainer {
     position: relative;
-    height: 380px;
   }
   .Img {
     position: absolute;
+    top: -160px;
     right: 40px;
+    z-index: 0;
   }
+
   .Joke {
-    position: absolute;
     box-sizing: border-box;
-    top: 160px;
+    position: relative;
+    z-index: 1;
+    margin-top: 160px;
     padding: 24px;
+    min-height: 162px;
     background-color: #422ed4;
     box-shadow: 0px 100px 80px rgba(80, 76, 103, 0.07),
       0px 0px 10.0172px rgba(80, 76, 103, 0.035);
@@ -76,6 +80,7 @@
 @media screen and (min-width: 768px) {
   .List {
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
   }
   .Item {
@@ -86,9 +91,7 @@
   .Item:nth-child(3n) {
     margin-right: 0px;
   }
-  .ChuckContainer {
-    height: 300px;
-  }
+
   .Joke {
     width: 100%;
   }
@@ -115,12 +118,17 @@
     width: 170px;
   }
   .Item:nth-child(4n) {
+    margin-right: 0px;
+  }
+  /* .Item:nth-child(6n) {
+    margin-right: 0px;
+  } */
+}
+@media screen and (min-width: 1440px) {
+  .Item:nth-child(4n) {
     margin-right: 20px;
   }
   .Item:nth-child(6n) {
     margin-right: 0px;
-  }
-  .Joke {
-    min-width: 1120px;
   }
 }

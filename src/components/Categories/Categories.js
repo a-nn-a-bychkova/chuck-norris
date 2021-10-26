@@ -19,7 +19,11 @@ export default function Categories() {
     norrisAPI
       .fetchRandomJokeOfCategory(e.currentTarget.innerHTML)
       .then(result => setJoke(result.value));
+  }
+
+  function handleRandomClick(e) {
     setActiveCategory(e.currentTarget.innerHTML);
+    norrisAPI.fetchRandomJoke().then(result => setJoke(result.value));
   }
 
   return (
@@ -41,13 +45,30 @@ export default function Categories() {
                 {category}
               </li>
             ))}
+            <li
+              key="random"
+              className={
+                activeCategory === 'random'
+                  ? `${styles.Item} ${styles.ActiveItem}`
+                  : styles.Item
+              }
+              onClick={handleRandomClick}
+            >
+              random
+            </li>
           </ul>
         )}
       </div>
 
       <div className={styles.ChuckContainer}>
-        <img src={Chuck} width="122px" height="258px" className={styles.Img} />
         <div className={styles.Joke}>{joke}</div>
+        <img
+          src={Chuck}
+          width="122px"
+          height="258px"
+          alt="Chuck Norris"
+          className={styles.Img}
+        />
       </div>
     </section>
   );
