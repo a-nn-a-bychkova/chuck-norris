@@ -24,7 +24,7 @@ export default function Categories() {
 
   return (
     <section>
-      <div>
+      <div className={styles.CategoriesContainer}>
         <h1 className={styles.Title}>Categories</h1>
         {categories && (
           <ul className={styles.List}>

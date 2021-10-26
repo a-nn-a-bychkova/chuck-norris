@@ -23,7 +23,6 @@
   .Item {
     width: 170px;
     height: 57px;
-    background-color: pink;
     margin-bottom: 20px;
     border-radius: 20px;
     text-align: center;
@@ -32,6 +31,7 @@
     font-family: Raleway;
     font-weight: 800;
     font-size: 16px;
+    color: #1c1c39;
   }
 
   .ActiveItem {
@@ -55,6 +55,7 @@
   }
   .Joke {
     position: absolute;
+    box-sizing: border-box;
     top: 160px;
     padding: 24px;
     background-color: #422ed4;
@@ -83,6 +84,9 @@
   .Item:nth-child(3n) {
     margin-right: 0px;
   }
+  .Joke {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1024px) {
   .Item {
@@ -110,5 +114,8 @@
   }
   .Item:nth-child(6n) {
     margin-right: 0px;
+  }
+  .Joke {
+    min-width: 1120px;
   }
 }
